@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>buildablog</title>
+    <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+  </head>
+
+  <header>
+    <a href="https://Build-a-Blog.awomack333.repl.co">Home Page</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Build-a-Blog.awomack333.repl.co/postpage">Add a Blog Post</a>
+    <h1>Build-a-Blog</h1>
+  </header>
+
+
+  <body>
+    <form action='/' method="POST">
+      <br>
+      Email (<i>optional</i>)<br>
+      <input type="text" name="email" value="{{email}}">{{email_error}}</input><br>
+      Username (<i>required</i>)<br>
+      <input type="text" name="username" value="{{username}}">{{username_error}}</input><br>
+      Password (<i>required</i>)<br>
+      <input type="password" name="password">{{password_error}}</input><br>
+      Verify Password (<i>required</i>)<br>
+      <input type="password" name="verify">{{verify_error}}</input><br>
+  
+      <br><input type="submit" class="subButton" name="submit" value="Sign Up"></input>
+    </form>
+    <script src="main.py"></script>
+  </body>
+
+</html>
